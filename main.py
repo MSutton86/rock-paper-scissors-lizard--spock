@@ -26,3 +26,5 @@
 # Paper disproves Spock
 # Spock vaporizes Rock
 # End Result  (Example Below)
+
+#gestures["rock", "scissors", "paper", "lizard", "spock"]
