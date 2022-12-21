@@ -3,29 +3,21 @@ class Player:
         self.name = name
 
     def game_choice(self, player):
-        self.single_player = one_v_ai
-        self.multi_player = one_v_one
-        #will have to be imported 
+        pass
 
     def gesture_choice(self):
-        self
+        pass
+        
+        
+# gestures = ["rock", "scissors", "paper", "lizard", "spock"]
 
-
-
-
-
-gestures["rock", "scissors", "paper", "lizard", "spock"]
-
-
-
-
-"rock" > "scissors"
-"scissors" > "paper"
-"paper" > "rock"
-"rock" > "lizard"
-"lizard" > "spock"
-"spock" > "scissors"
-"scissors" > "lizard"
-"lizard" > "paper"
-"paper" > "spock"
-"spock" > "rock"
+# "rock" > "scissors"
+# "scissors" > "paper"
+# "paper" > "rock"
+# "rock" > "lizard"
+# "lizard" > "spock"
+# "spock" > "scissors"
+# "scissors" > "lizard"
+# "lizard" > "paper"
+# "paper" > "spock"
+# "spock" > "rock"
