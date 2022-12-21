@@ -8,8 +8,8 @@ class Game:
     def run_game(self):
         pass
 
-    def display_greeting(self):
-        pass
+    def introduction(self):
+        pass# mode choice game guidelines
 
     def game_rounds(self):
         pass
