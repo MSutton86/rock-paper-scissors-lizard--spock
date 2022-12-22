@@ -1,6 +1,6 @@
 class Player:
-    def __init__(self) -> None:
-        self.name = self
+    def __init__(self, name):
+        self.name = name
         self.gestures = ["rock", "scissors", "paper", "Lizard", "Spock"]
         self.score = 0
 
@@ -26,4 +26,3 @@ class Player:
 # "paper" > "spock"
 # "spock" > "rock"
 
-d
