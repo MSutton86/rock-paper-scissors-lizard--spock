@@ -1,30 +1,17 @@
 from player import Player
-class Human:
-    def __init__(self) -> None:
-        pass
 
-    def mode_choice(self):
-        pass #input
+class Human(Player):
+    def __init__(self, name):
+        super().__init__(name)
 
-    def gesture(self):
-        pass #input
-
-
-# gestures["rock", "scissors", "paper", "lizard", "spock"]
+    def choose_gesture(self):
+        # display gestures
+        
+        for gesture in self.gestures:
+            print(gesture)
 
 
+            
+# prompt user for gesture, capture in variable
 
-
-# "rock" > "scissors"
-# "scissors" > "paper"
-# "paper" > "rock"
-# "rock" > "lizard"
-# "lizard" > "spock"
-# "spock" > "scissors"
-# "scissors" > "lizard"
-# "lizard" > "paper"
-# "paper" > "spock"
-# "spock" > "rock"
-# greeting("Hello world")
-# #function in game
-#in game
+        # validate user input (save for last)
