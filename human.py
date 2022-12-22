@@ -14,4 +14,6 @@ class Human(Player):
             
 # prompt user for gesture, capture in variable
 
+        # prompt user for gesture, capture in variable
+
         # validate user input (save for last)
