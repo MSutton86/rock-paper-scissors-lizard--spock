@@ -25,5 +25,3 @@ class Player:
 # "lizard" > "paper"
 # "paper" > "spock"
 # "spock" > "rock"
-
-d
