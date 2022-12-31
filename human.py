@@ -5,10 +5,7 @@ class Human(Player):
         super().__init__(name)
 
     def choose_gesture(self):
-        # display gestures
-        
-        for gesture in self.gestures:
-            print(gesture)
+        pass
 
 
             

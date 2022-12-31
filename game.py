@@ -1,7 +1,13 @@
 import random
 from rules import Rules
+from human import Human
+from ai import AI
+
+player_1 = Human("Player_1")
+player_2 = AI ("Player_2")
 
 gestures = ["rock", "scissors", "paper", "lizard", "spock"]
+
 player_input = input("Do you want to play Single Player or Multi Player? (Single or Multi)")
 if player_input == "S" or "s" or "Single" or "single":
     player_1_input = input(f"Enter a Choice {gestures}") 
