@@ -14,7 +14,7 @@ if player_input == "S" or "s" or "Single" or "single":
     print(player_1_input)
     player_2_input = random.choice(gestures)
     print(player_2_input)
-    Rules.decision_engine(player_1_input, player_2_input)
+    Rules.decision_engine()
 elif player_input == "M" or "m" or "Multi" or "multi":
     player_1_input = input(f"Player 1, Enter a Choice {gestures}") 
     print(player_1_input)
