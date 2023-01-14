@@ -33,7 +33,7 @@ class Rules(Human, AI):
             self.player_1_score += 1
             return self.player_1_score
         elif self.gesture_1 == self.scissors and self.gesture_2 == self.spock or self.rock:
-            print("Player 2 wins!")
+        #     print("Player 2 wins!")
             self.player_2_score += 1
             return self.player_2_score
         elif self.gesture_1 == self.paper and self.gesture_2 == self.rock or self.spock:

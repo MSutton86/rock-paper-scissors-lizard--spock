@@ -10,10 +10,10 @@ class Game:
         self.player_2 = AI("Player_2")
 
     def run_game(self):
-            self.display_game_rules()
-            self.select_game_type()
-            self.run_round()
-            self. display_winner()
+        self.display_game_rules()
+        self.select_game_type()
+        self.run_round()
+        self. display_winner()
 
     def display_winner(self):
         winner= None 
@@ -21,20 +21,18 @@ class Game:
             winner = self.player_1
         else:
             winner = self.player_2
-
         print(f'{winner.name} WINS THE GAME!!!')
 
-
-
     def display_game_rules(self):
-            print('GAME RULES DISPLAYED HERE')
+        print('GAME RULES DISPLAYED HERE')
 
     def select_game_type(self):
-            response = input("How many players (1-2)?")
-            if response == "2":
-                self.player_2 = Human('Player 2')
+        response = input("How many human players (1-2)? ")
+        if response == "2":
+            self.player_2 = Human('Player 2')
 
     def run_round(self):
+        round = 1
         while self.player_1.score < 2 and self.player_2.score < 2:
             print(f'ROUND{round}')
             self.display_scoreboard()
@@ -55,11 +53,26 @@ class Game:
                 self.player_1.score_point()
             else:
                 self.player_2.score_point()
+        elif self.player_1.gesture == 'paper':
+            if self.player_2.gesture == 'rock' or self.player_2.gesture == 'spock':
+                self.player_1.score_point()
+            else:
+                self.player_2.score_point()
+        elif self.player_1.gesture == 'lizard':
+            if self.player_2.gesture == 'paper' or self.player_2.gesture == 'spock':
+                self.player_1.score_point()
+            else:
+                self.player_2.score_point()
+        elif self.player_1.gesture == 'spock':
+            if self.player_2.gesture == 'scissors' or self.player_2.gesture == 'rock':
+                self.player_1.score_point()
+            else:
+                self.player_2.score_point()
 
     def choose_gestures(self):
         self.player_1.choose_gesture()
         self.player_2.choose_gesture()
-    
+
     def display_scoreboard(self):
         print(f'{self.player_1.name}: {self.player_1.score}')
         print(f'{self.player_2.name}: {self.player_2.score}')

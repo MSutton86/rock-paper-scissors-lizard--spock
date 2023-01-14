@@ -1,5 +1,4 @@
 class Player:
-
     def __init__(self, name):
         self.name = name
         self.gestures = ["rock", "scissors", "paper", "lizard", "spock"]
@@ -11,4 +10,4 @@ class Player:
 
     def score_point(self):
         self.score += 1 
-        print(f'{self.name} wins the round!s')
+        print(f'{self.name} wins the round!')
