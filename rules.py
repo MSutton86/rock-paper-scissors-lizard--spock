@@ -16,7 +16,8 @@ class Rules(Human, AI):
         self.player_2_score = 0
 
     def decision_engine(self):
-        self() != self.name
+        self == get_result
+        get_result = self.gesture_1 and self.gesture_2
         if self.gesture_1 == self.gesture_2:
             print("It's a Tie!")
         elif self.gesture_1 == self.rock and self.gesture_2 == self.scissors or self.lizard:

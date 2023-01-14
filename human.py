@@ -4,13 +4,20 @@ class Human(Player):
     def __init__(self, name):
         super().__init__(name)
 
+    def display_gesture(self):
+        for num in range(len(self.gestures)):
+            print(f'{num + 1}) {self.gestures[num]}')
+    
+    
     def choose_gesture(self):
-        pass
+        self.display_gestures()
+        selection = int(input('Please choose a gesture (0-4): ')
 
+        self.gesture = self.gestures[selection]
+        print(f'{self.name} has chosen {self.gesture}')
 
             
 # prompt user for gesture, capture in variable
 
         # prompt user for gesture, capture in variable
 
-        # validate user input (save for last)
