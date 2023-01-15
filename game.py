@@ -1,5 +1,6 @@
 import random
-from rules import Rules
+from rules import rules
+from decision_engine import Decision_Engine
 from human import Human
 from ai import AI
 
@@ -15,16 +16,8 @@ class Game:
         self.run_round()
         self. display_winner()
 
-    def display_winner(self):
-        winner= None 
-        if self.player_1.score >= 2:
-            winner = self.player_1
-        else:
-            winner = self.player_2
-        print(f'{winner.name} WINS THE GAME!!!')
-
     def display_game_rules(self):
-        print('GAME RULES DISPLAYED HERE')
+        print(*rules, sep='\n')
 
     def select_game_type(self):
         response = input("How many human players (1-2)? ")
@@ -77,11 +70,15 @@ class Game:
         print(f'{self.player_1.name}: {self.player_1.score}')
         print(f'{self.player_2.name}: {self.player_2.score}')
 
+    def display_winner(self):
+        winner= None 
+        if self.player_1.score >= 2:
+            winner = self.player_1
+        else:
+            winner = self.player_2
+        print(f'{winner.name} WINS THE GAME!!!')
 
-# player_1 = Human("Player_1")
-# player_2 = AI ("Player_2")
 
-# gestures = ["rock", "scissors", "paper", "lizard", "spock"]
 
 # player_input = input("Do you want to play Single Player or Multi Player? (Single or Multi)")
 # if player_input == "S" or "s" or "Single" or "single":
