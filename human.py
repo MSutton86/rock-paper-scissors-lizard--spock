@@ -14,9 +14,3 @@ class Human(Player):
 
         self.gesture = self.gestures[selection]
         print(f'{self.name} has chosen {self.gesture}')
-
-            
-# prompt user for gesture, capture in variable
-
-        # prompt user for gesture, capture in variable
-

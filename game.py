@@ -4,7 +4,6 @@ from decision_engine import Decision_Engine
 from human import Human
 from ai import AI
 
-
 class Game:
     def __init__(self):
         self.player_1 = Human("Player_1")
@@ -76,24 +75,4 @@ class Game:
             winner = self.player_1
         else:
             winner = self.player_2
-        print(f'{winner.name} WINS THE GAME!!!')
-
-
-
-# player_input = input("Do you want to play Single Player or Multi Player? (Single or Multi)")
-# if player_input == "S" or "s" or "Single" or "single":
-#     player_1_input = input(f"Enter a Choice {gestures}") 
-#     print(player_1_input)
-#     player_2_input = random.choice(gestures)
-#     print(player_2_input)
-#     Rules.decision_engine()
-# elif player_input == "M" or "m" or "Multi" or "multi":
-#     player_1_input = input(f"Player 1, Enter a Choice {gestures}") 
-#     print(player_1_input)
-#     player_2_input = input(f"Player 2, Enter a Choice {gestures}") 
-#     print(player_2_input)
-#     Rules.decision_engine(player_1_input, player_2_input)
-# else:
-#     print("Please enter a valid choice ")
-#     player_input = input("Do you want to play Single Player or Multi Player? (Single or Multi)")
- 
+        print(f'{winner.name} WINS THE GAME!!!') 
