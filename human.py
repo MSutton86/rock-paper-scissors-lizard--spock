@@ -6,7 +6,7 @@ class Human(Player):
 
     def display_gestures(self):
         for num in range(len(self.gestures)):
-            print(f'{num + 1}) {self.gestures[num]}')
+            print(f'{num}) {self.gestures[num]}')
      
     def choose_gesture(self):
         self.display_gestures()
